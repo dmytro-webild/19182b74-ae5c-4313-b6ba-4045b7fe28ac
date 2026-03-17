@@ -14,6 +14,13 @@ import FooterMedia from "@/components/sections/footer/FooterMedia";
 import { Sparkles, Zap, Award, Star, MessageCircle, TrendingUp, Users, Globe } from "lucide-react";
 
 export default function LandingPage() {
+  const handleContactSubmit = (email: string) => {
+    // Create WhatsApp link with the email as the message
+    const whatsappNumber = "923001234567";
+    const message = encodeURIComponent(`I'm interested in learning more. My email is: ${email}`);
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+  };
+
   return (
     <ThemeProvider
       defaultButtonVariant="shift-hover"
@@ -237,9 +244,10 @@ export default function LandingPage() {
           useInvertedBackground={false}
           mediaAnimation="slide-up"
           mediaPosition="right"
-          inputPlaceholder="Enter your WhatsApp number"
-          buttonText="Start Free Audit"
-          termsText="By clicking Start Free Audit, you're confirming that you agree with our Terms and Conditions."
+          inputPlaceholder="Enter your email"
+          buttonText="Get Your Free Audit"
+          termsText="By clicking Get Your Free Audit, you're confirming that you agree with our Terms and Conditions."
+          onSubmit={handleContactSubmit}
           ariaLabel="Contact section - start your free digital audit"
         />
       </div>

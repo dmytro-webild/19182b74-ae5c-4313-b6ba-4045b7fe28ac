@@ -21,7 +21,7 @@ export default function LandingPage() {
       borderRadius="pill"
       contentWidth="mediumLarge"
       sizing="mediumLarge"
-      background="noise"
+      background="circleGradient"
       cardStyle="solid"
       primaryButtonStyle="diagonal-gradient"
       secondaryButtonStyle="radial-glow"
@@ -49,9 +49,9 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           buttons={[{ text: "Get Your Free Audit", href: "#contact" }]}
           buttonAnimation="slide-up"
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-digital-agency-dashboard-interf-1773773909375-375f5849.png?_wi=1"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-digital-agency-dashboard-interf-1773773909375-375f5849.png"
           imageAlt="Ascend Digital Agency Dashboard"
-          background={{ variant: "noise" }}
+          background={{ variant: "plain" }}
           ariaLabel="Hero section - Ascend Digital Co digital agency services"
         />
       </div>
@@ -111,10 +111,10 @@ export default function LandingPage() {
           animationType="slide-up"
           products={[
             {
-              id: "1",              name: "Healthcare Clinic",              price: "+150% Appointments",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-minimalist-healthcare-clinic-we-1773773909716-30dd06d2.png?_wi=1",              imageAlt: "Modern healthcare clinic website"
+              id: "1",              name: "Healthcare Clinic",              price: "+150% Appointments",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-minimalist-healthcare-clinic-we-1773773909716-30dd06d2.png",              imageAlt: "Modern healthcare clinic website"
             },
             {
-              id: "2",              name: "Fine Dining Restaurant",              price: "+200% Online Orders",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-luxurious-restaurant-website-showcase--1773773911020-e41f8e77.png?_wi=1",              imageAlt: "Premium restaurant website"
+              id: "2",              name: "Fine Dining Restaurant",              price: "+200% Online Orders",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-luxurious-restaurant-website-showcase--1773773911020-e41f8e77.png",              imageAlt: "Premium restaurant website"
             },
             {
               id: "3",              name: "E-Commerce Store",              price: "+320% Sales Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-e-commerce-store-interface-feat-1773773910183-e3bdcf88.png",              imageAlt: "Modern ecommerce platform"
@@ -123,10 +123,10 @@ export default function LandingPage() {
               id: "4",              name: "Real Estate Agency",              price: "+280% Inquiries",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-professional-real-estate-website-showc-1773773910518-62b59273.png",              imageAlt: "Professional real estate website"
             },
             {
-              id: "5",              name: "Educational Institution",              price: "+190% Enrollments",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-minimalist-healthcare-clinic-we-1773773909716-30dd06d2.png?_wi=2",              imageAlt: "School digital presence"
+              id: "5",              name: "Educational Institution",              price: "+190% Enrollments",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-minimalist-healthcare-clinic-we-1773773909716-30dd06d2.png",              imageAlt: "School digital presence"
             },
             {
-              id: "6",              name: "Salon & Wellness",              price: "+240% Bookings",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-luxurious-restaurant-website-showcase--1773773911020-e41f8e77.png?_wi=2",              imageAlt: "Luxury salon website"
+              id: "6",              name: "Salon & Wellness",              price: "+240% Bookings",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-luxurious-restaurant-website-showcase--1773773911020-e41f8e77.png",              imageAlt: "Luxury salon website"
             }
           ]}
           ariaLabel="Portfolio section"
@@ -233,7 +233,7 @@ export default function LandingPage() {
           description="Connect with us today. Start with your free audit and let's build something extraordinary together."
           tagIcon={MessageCircle}
           tagAnimation="slide-up"
-          background={{ variant: "noise" }}
+          background={{ variant: "plain" }}
           useInvertedBackground={false}
           mediaAnimation="slide-up"
           mediaPosition="right"
@@ -246,7 +246,7 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-digital-agency-dashboard-interf-1773773909375-375f5849.png?_wi=2"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-digital-agency-dashboard-interf-1773773909375-375f5849.png"
           imageAlt="Ascend Digital Co footer branding"
           logoText="Ascend Digital Co"
           copyrightText="© 2024 Ascend Digital Co. All rights reserved."

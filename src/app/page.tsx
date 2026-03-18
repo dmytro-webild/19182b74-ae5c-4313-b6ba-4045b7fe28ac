@@ -14,12 +14,8 @@ import FooterMedia from "@/components/sections/footer/FooterMedia";
 import { Sparkles, Zap, Award, Star, MessageCircle, TrendingUp, Users, Globe } from "lucide-react";
 
 export default function LandingPage() {
-  const handleContactSubmit = (email: string) => {
-    // Create WhatsApp link with the email as the message
-    const whatsappNumber = "923001234567";
-    const message = encodeURIComponent(`I'm interested in learning more. My email is: ${email}`);
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
-  };
+  const whatsappNumber = "923312881111";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
     <ThemeProvider
@@ -43,7 +39,7 @@ export default function LandingPage() {
             { name: "Testimonials", id: "testimonials" },
             { name: "FAQ", id: "faq" }
           ]}
-          button={{ text: "Get Your Free Audit", href: "#contact" }}
+          button={{ text: "Get Your Free Audit", href: whatsappLink }}
         />
       </div>
 
@@ -54,7 +50,7 @@ export default function LandingPage() {
           tag="Digital Transformation"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
-          buttons={[{ text: "Get Your Free Audit", href: "#contact" }]}
+          buttons={[{ text: "Get Your Free Audit", href: whatsappLink }]}
           buttonAnimation="slide-up"
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B5GaFAtzppFY1Bfx848owYHqaY/a-modern-digital-agency-dashboard-interf-1773773909375-375f5849.png?_wi=1"
           imageAlt="Ascend Digital Agency Dashboard"
@@ -227,7 +223,7 @@ export default function LandingPage() {
               id: "6",              title: "How do you price your services?",              content: "Pricing is customized based on scope, timeline, and complexity. We offer flexible packages from starter to enterprise solutions. We believe in transparent pricing with no hidden fees and always provide detailed proposals before starting work."
             }
           ]}
-          buttons={[{ text: "Get Your Free Audit", href: "#contact" }]}
+          buttons={[{ text: "Get Your Free Audit", href: whatsappLink }]}
           buttonAnimation="slide-up"
           ariaLabel="FAQ section"
         />
@@ -247,7 +243,9 @@ export default function LandingPage() {
           inputPlaceholder="Enter your email"
           buttonText="Get Your Free Audit"
           termsText="By clicking Get Your Free Audit, you're confirming that you agree with our Terms and Conditions."
-          onSubmit={handleContactSubmit}
+          onSubmit={() => {
+            window.open(whatsappLink, "_blank");
+          }}
           ariaLabel="Contact section - start your free digital audit"
         />
       </div>
@@ -264,7 +262,7 @@ export default function LandingPage() {
                 { label: "Website Design", href: "#services" },
                 { label: "AI Automation", href: "#services" },
                 { label: "Social Media Management", href: "#services" },
-                { label: "Free Audit", href: "#contact" }
+                { label: "Free Audit", href: whatsappLink }
               ]
             },
             {
@@ -277,10 +275,10 @@ export default function LandingPage() {
             },
             {
               title: "Connect",              items: [
-                { label: "WhatsApp", href: "https://wa.me/923001234567" },
+                { label: "WhatsApp", href: whatsappLink },
                 { label: "Email", href: "mailto:hello@ascenddigital.com" },
                 { label: "Lahore Office", href: "#" },
-                { label: "Get Free Audit", href: "#contact" }
+                { label: "Get Free Audit", href: whatsappLink }
               ]
             },
             {
@@ -288,7 +286,7 @@ export default function LandingPage() {
                 { label: "Privacy Policy", href: "#" },
                 { label: "Terms of Service", href: "#" },
                 { label: "Cookie Policy", href: "#" },
-                { label: "Contact", href: "#contact" }
+                { label: "Contact", href: whatsappLink }
               ]
             }
           ]}
